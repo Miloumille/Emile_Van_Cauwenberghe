@@ -3,24 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio d'Emile Van Cauwenberghe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Mon Portfolio</h1>
+        <div class="profile-picture"></div>
+        <div class="banner">
+            <h1>Emile Van Cauwenberghe</h1>
+        </div>
     </header>
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Bienvenue sur mon portfolio. Je suis un développeur passionné.</p>
-    </section>
-    <section id="projects">
-        <h2>Projets</h2>
-        <p>Quelques-uns de mes projets récents.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Envoyez-moi un message à monemail@example.com</p>
-    </section>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="nav-item">
+                        <a href="#section1" data-section="section1">Introduction</a>
+                        <ul class="sub-menu">
+                            <li>À propos de moi</li>
+                            <li>Mes objectifs</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section2" data-section="section2">Projets</a>
+                        <ul class="sub-menu">
+                            <li>Analyse de données génomiques sur le cancer</li>
+                            <li>Développement d'un outil de visualisation de données interactif</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section3" data-section="section3">Compétences</a>
+                        <ul class="sub-menu">
+                            <li>Langages de programmation</li>
+                            <li>Outils et technologies</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#section4" data-section="section4">Contact</a>
+                        <ul class="sub-menu">
+                            <li>Email</li>
+                            <li>LinkedIn</li>
+                            <li>GitHub</li>
+                            <li>Téléphone</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <section id="section1">
+                <h2>Introduction</h2>
+                <h3>À propos de moi</h3>
+                <p>Je suis un jeune étudiant en bioinformatique, passionné par la programmation et l'analyse de données. J'ai toujours été fasciné par la manière dont les données peuvent être utilisées pour résoudre des problèmes complexes et améliorer notre compréhension du monde qui nous entoure. Depuis mon plus jeune âge, j'ai été attiré par les sciences et la technologie, et j'ai rapidement développé un intérêt particulier pour la biologie et l'informatique. La bioinformatique est pour moi le mariage parfait de ces deux passions, et je suis convaincu qu'elle a un potentiel énorme pour révolutionner la recherche biologique et médicale.</p>
+                <h3>Mes objectifs</h3>
+                <p>Mon objectif principal est de devenir un expert en bioinformatique et de contribuer à la recherche dans ce domaine. Je souhaite utiliser mes compétences en programmation et en analyse de données pour développer de nouveaux outils et méthodes qui pourront aider les chercheurs à mieux comprendre les données biologiques et à faire des découvertes importantes. Je suis particulièrement intéressé par l'analyse de données génomiques et protéomiques, et je souhaite travailler sur des projets qui ont un impact direct sur la santé humaine. À long terme, j'aimerais diriger une équipe de recherche en bioinformatique et contribuer à la formation de la prochaine génération de bioinformaticiens.</p>
+            </section>
+            <section id="section2">
+                <h2>Projets</h2>
+                <h3>Projet 1 : Analyse de données génomiques sur le cancer</h3>
+                <p>Dans le cadre de ce projet, j'ai analysé des données génomiques provenant de patients atteints de cancer afin d'identifier des mutations génétiques associées à la maladie. J'ai utilisé des outils de bioinformatique tels que R et Python pour traiter et analyser les données, et j'ai développé un modèle statistique pour prédire la probabilité de développer un cancer en fonction des mutations génétiques présentes. J'ai également créé des visualisations interactives pour explorer les données et présenter les résultats de manière claire et concise. Ce projet m'a permis de développer mes compétences en analyse de données génomiques et en modélisation statistique, et il m'a donné un aperçu des défis et des opportunités de la recherche en oncologie.</p>
+                <h3>Projet 2 : Développement d'un outil de visualisation de données interactif</h3>
+                <p>J'ai développé un outil de visualisation de données interactif qui permet aux utilisateurs d'explorer des données biologiques complexes de manière intuitive. L'outil permet de visualiser des données génomiques, protéomiques et métabolomiques, et il offre des fonctionnalités de filtrage et de zoom pour faciliter l'exploration des données. J'ai utilisé JavaScript et la bibliothèque D3.js pour créer l'interface utilisateur interactive, et j'ai intégré des bases de données publiques pour permettre aux utilisateurs d'accéder à des données biologiques pertinentes. Cet outil a été conçu pour être utilisé par des chercheurs en biologie et en médecine, et il a été présenté lors de plusieurs conférences scientifiques. Il a reçu des commentaires positifs de la part des utilisateurs, qui ont apprécié sa facilité d'utilisation et sa capacité à révéler des informations cachées dans les données.</p>
+            </section>
+            <section id="section3">
+                <h2>Compétences</h2>
+                <h3>Langages de programmation</h3>
+                <p>Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch), R (Bioconductor, ggplot2, Shiny), JavaScript (D3.js, React, Node.js), SQL, C++, Java.</p>
+                <h3>Outils et technologies</h3>
+                <p>Git, Docker, Linux, AWS (EC2, S3, Lambda), Google Cloud Platform (Compute Engine, Cloud Storage, Cloud Functions), Jupyter Notebooks, RStudio, VS Code, Bioinformatics tools (BLAST, SAMtools, GATK).</p>
+            </section>
+            <section id="section4">
+                <h2>Contact</h2>
+                <h3>Email</h3>
+                <p>emile.vancau@example.com</p>
+                <h3>LinkedIn</h3>
+                <p>linkedin.com/in/emilevancau</p>
+                <h3>GitHub</h3>
+                <p>github.com/emilevancau</p>
+                <h3>Téléphone</h3>
+                <p>+1 555-123-4567</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
