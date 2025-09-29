@@ -3,89 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio d'Emile Van Cauwenberghe</title>
+    <title>Portfolio Bioinformatique | Emile Van Cauwenberghe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="profile-picture"></div>
-        <div class="banner">
-            <h1>Emile Van Cauwenberghe</h1>
+    <div class="page-background" aria-hidden="true"></div>
+    <header class="hero">
+        <div class="hero__content">
+            <div class="hero__avatar" aria-hidden="true"></div>
+            <div class="hero__intro">
+                <p class="hero__eyebrow">Bioinformatique &amp; science des données</p>
+                <h1>Emile Van Cauwenberghe</h1>
+                <p class="hero__tagline">Je conçois des pipelines et des analyses exploratoires pour transformer des données omiques complexes en connaissances actionnables.</p>
+                <div class="hero__meta">
+                    <span>📍 Lille, France</span>
+                    <span>🎓 Étudiant en bioinformatique</span>
+                    <span>🧬 Passionné par les projets collaboratifs</span>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li class="nav-item">
-                        <a href="#section1" data-section="section1">Introduction</a>
-                        <ul class="sub-menu">
-                            <li>À propos de moi</li>
-                            <li>Mes objectifs</li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#section2" data-section="section2">Projets</a>
-                        <ul class="sub-menu">
-                            <li>Analyse de données génomiques sur le cancer</li>
-                            <li>Développement d'un outil de visualisation de données interactif</li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#section3" data-section="section3">Compétences</a>
-                        <ul class="sub-menu">
-                            <li>Langages de programmation</li>
-                            <li>Outils et technologies</li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#section4" data-section="section4">Contact</a>
-                        <ul class="sub-menu">
-                            <li>Email</li>
-                            <li>LinkedIn</li>
-                            <li>GitHub</li>
-                            <li>Téléphone</li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="content">
-            <section id="section1">
-                <h2>Introduction</h2>
-                <h3>À propos de moi</h3>
-                <p>Je suis un jeune étudiant en bioinformatique, passionné par la programmation et l'analyse de données. J'ai toujours été fasciné par la manière dont les données peuvent être utilisées pour résoudre des problèmes complexes et améliorer notre compréhension du monde qui nous entoure. Depuis mon plus jeune âge, j'ai été attiré par les sciences et la technologie, et j'ai rapidement développé un intérêt particulier pour la biologie et l'informatique. La bioinformatique est pour moi le mariage parfait de ces deux passions, et je suis convaincu qu'elle a un potentiel énorme pour révolutionner la recherche biologique et médicale.</p>
-                <h3>Mes objectifs</h3>
-                <p>Mon objectif principal est de devenir un expert en bioinformatique et de contribuer à la recherche dans ce domaine. Je souhaite utiliser mes compétences en programmation et en analyse de données pour développer de nouveaux outils et méthodes qui pourront aider les chercheurs à mieux comprendre les données biologiques et à faire des découvertes importantes. Je suis particulièrement intéressé par l'analyse de données génomiques et protéomiques, et je souhaite travailler sur des projets qui ont un impact direct sur la santé humaine. À long terme, j'aimerais diriger une équipe de recherche en bioinformatique et contribuer à la formation de la prochaine génération de bioinformaticiens.</p>
-            </section>
-            <section id="section2">
-                <h2>Projets</h2>
-                <h3>Projet 1 : Analyse de données génomiques sur le cancer</h3>
-                <p>Dans le cadre de ce projet, j'ai analysé des données génomiques provenant de patients atteints de cancer afin d'identifier des mutations génétiques associées à la maladie. J'ai utilisé des outils de bioinformatique tels que R et Python pour traiter et analyser les données, et j'ai développé un modèle statistique pour prédire la probabilité de développer un cancer en fonction des mutations génétiques présentes. J'ai également créé des visualisations interactives pour explorer les données et présenter les résultats de manière claire et concise. Ce projet m'a permis de développer mes compétences en analyse de données génomiques et en modélisation statistique, et il m'a donné un aperçu des défis et des opportunités de la recherche en oncologie.</p>
-                <h3>Projet 2 : Développement d'un outil de visualisation de données interactif</h3>
-                <p>J'ai développé un outil de visualisation de données interactif qui permet aux utilisateurs d'explorer des données biologiques complexes de manière intuitive. L'outil permet de visualiser des données génomiques, protéomiques et métabolomiques, et il offre des fonctionnalités de filtrage et de zoom pour faciliter l'exploration des données. J'ai utilisé JavaScript et la bibliothèque D3.js pour créer l'interface utilisateur interactive, et j'ai intégré des bases de données publiques pour permettre aux utilisateurs d'accéder à des données biologiques pertinentes. Cet outil a été conçu pour être utilisé par des chercheurs en biologie et en médecine, et il a été présenté lors de plusieurs conférences scientifiques. Il a reçu des commentaires positifs de la part des utilisateurs, qui ont apprécié sa facilité d'utilisation et sa capacité à révéler des informations cachées dans les données.</p>
-            </section>
-            <section id="section3">
-                <h2>Compétences</h2>
-                <h3>Langages de programmation</h3>
-                <p>Python (Pandas, NumPy, Scikit-learn, TensorFlow, PyTorch), R (Bioconductor, ggplot2, Shiny), JavaScript (D3.js, React, Node.js), SQL, C++, Java.</p>
-                <h3>Outils et technologies</h3>
-                <p>Git, Docker, Linux, AWS (EC2, S3, Lambda), Google Cloud Platform (Compute Engine, Cloud Storage, Cloud Functions), Jupyter Notebooks, RStudio, VS Code, Bioinformatics tools (BLAST, SAMtools, GATK).</p>
-            </section>
-            <section id="section4">
-                <h2>Contact</h2>
-                <h3>Email</h3>
-                <p>emile.vancau@example.com</p>
-                <h3>LinkedIn</h3>
-                <p>linkedin.com/in/emilevancau</p>
-                <h3>GitHub</h3>
-                <p>github.com/emilevancau</p>
-                <h3>Téléphone</h3>
-                <p>+1 555-123-4567</p>
-            </section>
-        </main>
-    </div>
+    <main>
+        <section class="filters" aria-labelledby="filters-title">
+            <div class="filters__header">
+                <h2 id="filters-title">Explorer mes projets</h2>
+                <p>Sélectionnez une catégorie pour révéler les études de cas correspondantes. Chaque carte présente un aperçu rapide : objectif, technologies clés et livrables.</p>
+            </div>
+            <div class="filters__buttons" role="group" aria-label="Catégories de projets">
+                <button class="filter-button is-active" data-filter="all" aria-pressed="true">Tous les projets</button>
+                <button class="filter-button" data-filter="Genomics & Variant Analysis" aria-pressed="false">Genomics &amp; Variant Analysis</button>
+                <button class="filter-button" data-filter="Transcriptomics & Gene Expression" aria-pressed="false">Transcriptomics &amp; Gene Expression</button>
+                <button class="filter-button" data-filter="Structural Bioinformatics & Drug Design" aria-pressed="false">Structural Bioinformatics &amp; Drug Design</button>
+                <button class="filter-button" data-filter="Metagenomics & Microbiome Analysis" aria-pressed="false">Metagenomics &amp; Microbiome Analysis</button>
+                <button class="filter-button" data-filter="Computational Workflows & Scripting" aria-pressed="false">Computational Workflows &amp; Scripting</button>
+            </div>
+        </section>
+
+        <section class="projects" aria-label="Liste des projets">
+            <div class="projects__grid">
+                <article class="project-card" data-category="Genomics & Variant Analysis">
+                    <header>
+                        <h3>Pipeline de détection de variants germinaux</h3>
+                        <span class="project-card__category">Genomics &amp; Variant Analysis</span>
+                    </header>
+                    <p>Conception d'un pipeline reproductible pour l'appel de variants à partir de données WES avec GATK, intégration de QC automatisé et reporting interactif.</p>
+                    <ul class="project-card__tags">
+                        <li>GATK</li>
+                        <li>Snakemake</li>
+                        <li>R Markdown</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Prototype interne</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Genomics & Variant Analysis">
+                    <header>
+                        <h3>Analyse comparative de signatures tumorales</h3>
+                        <span class="project-card__category">Genomics &amp; Variant Analysis</span>
+                    </header>
+                    <p>Benchmark d'algorithmes pour identifier des signatures mutationales dans les cohortes TCGA, avec visualisations interactives des profils de mutation.</p>
+                    <ul class="project-card__tags">
+                        <li>Python</li>
+                        <li>scikit-learn</li>
+                        <li>TCGA</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Étude exploratoire</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Transcriptomics & Gene Expression">
+                    <header>
+                        <h3>Profilage d'expression différentielle RNA-Seq</h3>
+                        <span class="project-card__category">Transcriptomics &amp; Gene Expression</span>
+                    </header>
+                    <p>Pipeline complet de traitement RNA-Seq : quantification, normalisation, analyses DEG et enrichissements fonctionnels avec rapports HTML interactifs.</p>
+                    <ul class="project-card__tags">
+                        <li>DESeq2</li>
+                        <li>Bioconductor</li>
+                        <li>Shiny</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">En cours de validation</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Transcriptomics & Gene Expression">
+                    <header>
+                        <h3>Cartographie spatiale des transcrits</h3>
+                        <span class="project-card__category">Transcriptomics &amp; Gene Expression</span>
+                    </header>
+                    <p>Application interactive pour explorer des données de transcriptomique spatiale et mettre en avant des micro-environnements tumoraux spécifiques.</p>
+                    <ul class="project-card__tags">
+                        <li>Python</li>
+                        <li>Plotly Dash</li>
+                        <li>Seurat</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Concept</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Structural Bioinformatics & Drug Design">
+                    <header>
+                        <h3>Criblage virtuel de ligands pour kinases</h3>
+                        <span class="project-card__category">Structural Bioinformatics &amp; Drug Design</span>
+                    </header>
+                    <p>Pipeline de docking haute capacité pour prioriser des inhibiteurs de kinases, avec scoring combiné et visualisation 3D web.</p>
+                    <ul class="project-card__tags">
+                        <li>AutoDock Vina</li>
+                        <li>PyMOL</li>
+                        <li>Flask</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Résultats préliminaires</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Structural Bioinformatics & Drug Design">
+                    <header>
+                        <h3>Analyse de stabilité de complexes protéine-ligand</h3>
+                        <span class="project-card__category">Structural Bioinformatics &amp; Drug Design</span>
+                    </header>
+                    <p>Simulation de dynamiques moléculaires pour évaluer la stabilité de complexes thérapeutiques, tableaux de bord résumant les interactions clés.</p>
+                    <ul class="project-card__tags">
+                        <li>GROMACS</li>
+                        <li>MDAnalysis</li>
+                        <li>Dashboards</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Collaboration académique</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Metagenomics & Microbiome Analysis">
+                    <header>
+                        <h3>Atlas microbiome de fermes urbaines</h3>
+                        <span class="project-card__category">Metagenomics &amp; Microbiome Analysis</span>
+                    </header>
+                    <p>Étude comparative des communautés microbiennes dans des fermes hydroponiques, workflows de taxonomie et visualisation chronologique.</p>
+                    <ul class="project-card__tags">
+                        <li>QIIME 2</li>
+                        <li>R tidyverse</li>
+                        <li>MetaboAnalyst</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Publication en préparation</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Metagenomics & Microbiome Analysis">
+                    <header>
+                        <h3>Surveillance métagénomique en hôpital</h3>
+                        <span class="project-card__category">Metagenomics &amp; Microbiome Analysis</span>
+                    </header>
+                    <p>Dashboard temps réel pour suivre la résistance antimicrobienne via séquençage shotgun, alertes automatisées pour les équipes cliniques.</p>
+                    <ul class="project-card__tags">
+                        <li>Nextflow</li>
+                        <li>Grafana</li>
+                        <li>ELK Stack</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">POC fonctionnel</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Computational Workflows & Scripting">
+                    <header>
+                        <h3>Starter kit de workflows reproductibles</h3>
+                        <span class="project-card__category">Computational Workflows &amp; Scripting</span>
+                    </header>
+                    <p>Boilerplate Nextflow avec intégration CI/CD GitHub Actions, tests automatisés et gestion de paramètres via fichiers de profils.</p>
+                    <ul class="project-card__tags">
+                        <li>Nextflow</li>
+                        <li>GitHub Actions</li>
+                        <li>Docker</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Disponible sur GitHub</span>
+                    </footer>
+                </article>
+
+                <article class="project-card" data-category="Computational Workflows & Scripting">
+                    <header>
+                        <h3>Bibliothèque utilitaire pour analyses omiques</h3>
+                        <span class="project-card__category">Computational Workflows &amp; Scripting</span>
+                    </header>
+                    <p>Collection de scripts Python et R harmonisés pour la préparation de matrices omiques, QA/QC et intégration avec des LIMS.</p>
+                    <ul class="project-card__tags">
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>Poetry</li>
+                    </ul>
+                    <footer>
+                        <span class="project-card__status">Version beta</span>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title">Travaillons ensemble</h2>
+            <p>Intéressé par une collaboration, un stage ou simplement une discussion autour de la bioinformatique ? Contactez-moi :</p>
+            <ul class="contact__list">
+                <li>Email : <a href="mailto:emile.vancau@example.com">emile.vancau@example.com</a></li>
+                <li>LinkedIn : <a href="https://linkedin.com/in/emilevancau" target="_blank" rel="noreferrer">linkedin.com/in/emilevancau</a></li>
+                <li>GitHub : <a href="https://github.com/emilevancau" target="_blank" rel="noreferrer">github.com/emilevancau</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> Emile Van Cauwenberghe. Tous droits réservés.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
