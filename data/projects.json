@@ -1,0 +1,267 @@
+[
+  {
+    "id": "2024_CARD_BETRAND_GUILBERT_GSE79883_MOUSE",
+    "title": "Integrated RNA-seq Pipeline for TAC vs. SHAM Cardiomyocyte Analysis",
+    "category": "Transcriptomics & Gene Expression",
+    "date": "March 2024",
+    "status": "Cardiomyocyte cohort delivery",
+    "summary": "End-to-end RNA-seq workflow covering SRA retrieval, STAR alignment to GRCm39, Salmon quantification, TMM-normalised QC, and TAC_vs_SHAM differential modelling with isoform exploration.",
+    "description": "End-to-end RNA-seq workflow covering SRA data retrieval, STAR alignment to the GRCm39 mouse genome, Salmon quantification, count aggregation, and edgeR analyses (TMM normalisation, PCA, TAC_vs_SHAM contrast, Naca isoform exploration).",
+    "highlights": [
+      "Automated SRA Toolkit downloads and STAR alignment against the GRCm39 mouse genome.",
+      "Salmon quantification with aggregated counts, TMM normalisation, and PCA quality diagnostics.",
+      "edgeR modelling for TAC vs. SHAM contrasts with focused Naca isoform interrogation."
+    ],
+    "keywords": [
+      "Quality Control",
+      "Reproducible Pipelines",
+      "Workflow Automation"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1581091012184-5c1d46c7d5d9?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Laboratory workstation prepared for RNA sequencing protocols"
+    },
+    "tags": [
+      "Docker",
+      "SRA Toolkit",
+      "STAR",
+      "Salmon",
+      "R tidyverse",
+      "tximport",
+      "edgeR",
+      "ggplot2",
+      "WriteXLS"
+    ]
+  },
+  {
+    "id": "GWAS_ADHD",
+    "title": "Population Genetics Workflow for ADHD GWAS Loci",
+    "category": "Genomics & Variant Analysis",
+    "date": "September 2024",
+    "status": "Selection scan notebook suite",
+    "summary": "Combined R and Python tooling to annotate ADHD SNPs, retrieve LD haplotypes, stream 1000 Genomes slices, and fuse Tajima's D with iHS metrics for comparative genetics dashboards.",
+    "description": "Integrates R- and Python-based steps to annotate ADHD-associated SNPs via Ensembl/biomaRt, retrieve LD haplotypes with LDlinkR, pull 1000 Genomes Phase 3 slices through bcftools, compute Tajima\u2019s D on SAS cohorts using scikit-allel, and merge selection metrics (Tajima\u2019s D & iHS) for comparative visualisation and downstream notebooks/Rmd exploration.",
+    "highlights": [
+      "Annotated ADHD-associated SNPs using Ensembl biomaRt and LDlinkR haplotype queries.",
+      "Streamed 1000 Genomes Phase 3 data via bcftools and computed SAS Tajima's D with scikit-allel.",
+      "Blended Tajima's D and iHS selection metrics into comparative analytics notebooks."
+    ],
+    "keywords": [
+      "Cohort Analytics",
+      "Data Visualization"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1515309025403-4c55f708cbe2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "DNA double helix rendered with data overlays"
+    },
+    "tags": [
+      "R biomaRt",
+      "LDlinkR",
+      "data.table",
+      "Python requests",
+      "scikit-allel",
+      "bcftools",
+      "1000 Genomes Phase 3",
+      "Tajima's D",
+      "iHS"
+    ]
+  },
+  {
+    "id": "2024_CTMA_Conserved_HXNY_influenza_A",
+    "title": "Conserved HXNY Influenza A Alignment and Conservation Analysis",
+    "category": "Structural Bioinformatics & Drug Design",
+    "date": "December 2024",
+    "status": "Conservation profiling toolkit",
+    "summary": "R-driven pipeline for curating GISAID HXNY panels, Dockerised MAFFT alignments, phylogenetic triage, and residue conservation maps ready for Jalview exploration.",
+    "description": "R-based workflow that curates GISAID HA/NA segment FASTA collections, extracts subtype metadata, samples representative panels, and performs Dockerized MAFFT alignments for global and subtype-specific cohorts. Downstream steps organise Jalview-ready matrices, generate phylogenetic trees to isolate H1 vs. broader HX clades, and compute group-wise conservation profiles to pinpoint residues uniquely preserved within target lineages.",
+    "highlights": [
+      "Curated GISAID HA/NA FASTA panels with subtype-aware sampling inside R.",
+      "Ran Dockerised MAFFT alignments for global and subtype-specific cohorts and exported Jalview-ready matrices.",
+      "Generated phylogenetic trees and residue conservation profiles to isolate HX lineage signatures."
+    ],
+    "keywords": [
+      "Workflow Automation",
+      "Data Visualization"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Microscopic rendering of influenza virions"
+    },
+    "tags": [
+      "Docker",
+      "MAFFT",
+      "R Biostrings",
+      "dplyr",
+      "ape",
+      "seqinr",
+      "Jalview",
+      "GISAID"
+    ]
+  },
+  {
+    "id": "2025_03_CARD_HORMAN_CUMPS_RNASEQ_ACC",
+    "title": "Multifactor RNA-seq Reanalysis for ACC Patient Cohort",
+    "category": "Transcriptomics & Gene Expression",
+    "date": "March 2025",
+    "status": "Clinical report validation",
+    "summary": "Reproducible R notebooks harmonising vendor counts, running edgeR/DESeq2 models with covariates, and benchmarking ACC results with KEGG enrichment outputs.",
+    "description": "Reproducible R-based workflow that ingests vendor-delivered Excel count matrices and patient metadata to interrogate adrenocortical carcinoma (ACC) versus control samples. The notebooks harmonize sample annotations, perform TMM-normalised edgeR and DESeq2 models (univariate, age/sex-adjusted, and sensitivity analyses removing older or outlier donors), and contrast findings against the BMK report. Quality checks span library-size diagnostics, XY-driven sex validation, PCA before/after ComBat_seq batch correction, and top-gene expression visualisation. Downstream, differential results feed KEGG enrichment via multiGSEA/WebGestaltR with reports written to results/.",
+    "highlights": [
+      "Standardised vendor Excel matrices and metadata for reproducible ACC cohort interrogation.",
+      "Executed edgeR and DESeq2 models with covariate adjustments, sensitivity sweeps, and ComBat_seq corrections.",
+      "Delivered KEGG enrichment summaries via multiGSEA/WebGestaltR with reporting to results/."
+    ],
+    "keywords": [
+      "Clinical Reporting",
+      "Reproducible Pipelines",
+      "Quality Control"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Data scientists validating RNA-seq quality metrics"
+    },
+    "tags": [
+      "R edgeR",
+      "DESeq2",
+      "tidyverse",
+      "FactoMineR",
+      "sva ComBat_seq",
+      "multiGSEA",
+      "WebGestaltR",
+      "WriteXLS",
+      "readxl"
+    ]
+  },
+  {
+    "id": "2025_03_FATH_CORBET_DESGRES_INTEGRATE_TX_MT_HCC1937_HCC143",
+    "title": "Integrated KEGG Pathway Analytics for HCC1143/HCC1937 Multi-Omics Time Series",
+    "category": "Computational Workflows & Scripting",
+    "date": "March 2025",
+    "status": "KEGG insight reports",
+    "summary": "Concise R workflows unifying metabolomic and transcriptomic KEGG GSEA outputs, harmonising dotplot narratives, and extending overlays via pathview and OmnipathR.",
+    "description": "Concise R workflows merge KEGG GSEA outputs from metabolomic and transcriptomic contrasts of HCC1143/HCC1937 (baseline, week 7, week 18), distil key pathway trends, and generate aligned dotplot PDFs alongside spreadsheet exports (see script/01_kegg-dotplot_pathwayss.R:17, script/02_KEGG_dotplot_pathway_metabolites.R:31, script/04_KEGG_combine_dotplots.R:44). Auxiliary scripts probe KEGG overlays with pathview and extend ID translation via OmnipathR (see script/test_kegg_representation/06_pathview.R:15, script/test_kegg_representation/omnipath_R.R:3).",
+    "highlights": [
+      "Consolidated KEGG GSEA outputs across metabolomic and transcriptomic contrasts for three time points.",
+      "Automated comparative dotplot PDFs and spreadsheet exports for pathway storytelling.",
+      "Extended KEGG overlays with pathview and OmnipathR ID translations for deeper annotation."
+    ],
+    "keywords": [
+      "Reproducible Pipelines",
+      "Data Visualization"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1515309025403-4c55f708cbe2?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Abstract multi-omics pathway visualisation"
+    },
+    "tags": [
+      "R tidyverse",
+      "WebGestaltR",
+      "multiGSEA",
+      "ggplot2",
+      "readxl",
+      "WriteXLS",
+      "pathview",
+      "OmnipathR"
+    ]
+  },
+  {
+    "id": "2025_06_FATH_CORBET_CHIPSEQ_MAY2024_ANALYSE_2025",
+    "title": "Comprehensive ChIP-seq Analysis for HCT-116 Acidic pH Challenge",
+    "category": "Structural Bioinformatics & Drug Design",
+    "date": "June 2025",
+    "status": "Chromatin response dossier",
+    "summary": "Multi-script DiffBind pipeline covering normalisation, annotation, visualisation, enrichment, and genome browser summaries for pH-driven chromatin signalling.",
+    "description": "DiffBind pipeline builds the sample sheet from aligned BAM and peak calls, normalizes binding affinities, and generates PCA plus multi-contrast differential reports for pH 6.5, 7.4, and transition conditions (script/01_diffbind.R:1). Annotated peak tables map to hg38 genes via ChIPpeakAnno/ChIPseeker, quantify genomic feature distributions, and export significant hit lists with WriteXLS (script/03_annotation.R:1). Volcano plots, CD68-focused scatter views, and top-peak RPKM jitter panels highlight condition-specific modulation across replicates (script/04_volcano.R:1, script/02_scatterplot_top_targets.R:1). WebGestaltR-driven multiGSEA ranks KEGG pathways, with comparative dot plots and lysosome-centric visualizations summarizing enriched signaling programs (script/05_multiGSEA_KEGG.R:1, script/06_kegg_dotplot_pathway.R:1, script/06_kegg_dotplot_pathway_lysosome_only.R:1). Genome browser tracks and DiffBind profile PDFs interrogate CD68, ARRDC4, and global binding landscapes using Gviz and BSgenome resources (script/07_peak_enrichment_cd68_and_other_genes.R:1, script/08_profiles.R:1).",
+    "highlights": [
+      "DiffBind normalisation and multi-contrast reporting across acidic pH conditions.",
+      "Peak annotation and feature distribution summaries via ChIPpeakAnno and ChIPseeker.",
+      "Lysosome-focused KEGG enrichment with WebGestaltR plus Gviz browser tracks for key loci."
+    ],
+    "keywords": [
+      "Workflow Automation",
+      "Data Visualization"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=80",
+      "alt": "ChIP-seq signal traces displayed on a workstation"
+    },
+    "tags": [
+      "R",
+      "DiffBind",
+      "tidyverse",
+      "ChIPpeakAnno",
+      "ChIPseeker",
+      "WebGestaltR",
+      "multiGSEA",
+      "Gviz",
+      "BSgenome.Hsapiens.UCSC.hg38"
+    ]
+  },
+  {
+    "id": "2025_07_KUL_DEROUANE_METABOLOMIQUE",
+    "title": "Comprehensive Metabolomics Workflow for Multi-Cohort Breast Cancer Study",
+    "category": "Computational Workflows & Scripting",
+    "date": "July 2025",
+    "status": "Breast cancer metabolomics suite",
+    "summary": "Modular R analysis streamlining cohort harmonisation, subtype contrasts, predictive elastic-net models, and survival analytics with reporting outputs.",
+    "description": "Modular R analysis suite that ingests clinical metabolomics panels, standardises metadata into SummarizedExperiment objects, and delivers cohort-specific answers to six study questions\u2014ranging from descriptive clinical profiling to limma-based subtype contrasts, menopause and BMI associations, neoadjuvant pCR prediction with cross-validated elastic-net models, and Cox survival screening with Kaplan\u2013Meier visualisations, all exporting tabular and PDF reports.",
+    "highlights": [
+      "Standardised multi-cohort metabolomics into SummarizedExperiment workflows with tidyverse tooling.",
+      "Ran limma contrasts, elastic-net pCR models, and Cox survival screens with visual reporting.",
+      "Packaged tabular and PDF outputs for clinical collaborators."
+    ],
+    "keywords": [
+      "Cohort Analytics",
+      "Data Visualization",
+      "Clinical Reporting"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1559757175-5700dde6753c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Metabolomics workflow with annotated heatmaps"
+    },
+    "tags": [
+      "R",
+      "tidyverse",
+      "SummarizedExperiment",
+      "limma",
+      "survival",
+      "caret",
+      "glmnet",
+      "pROC",
+      "WriteXLS",
+      "FactoMineR",
+      "ggplot2",
+      "preprocessCore",
+      "patchwork"
+    ]
+  },
+  {
+    "id": "2025_CTMA_BACILLUS_CEREUS",
+    "title": "Targeted Prophage Region Extraction for Bacillus cereus Genome",
+    "category": "Metagenomics & Microbiome Analysis",
+    "date": "February 2025",
+    "status": "Targeted extraction workflow",
+    "summary": "Bioconductor-driven genome parsing to clip Bacillus cereus prophage loci, build per-region FASTA bundles, and prep assets for comparative genomics.",
+    "description": "R-based workflow centered on script/01_extract_regions.R, leveraging Bioconductor\u2019s Biostrings to parse the reference genome in data/sequence.fasta, clip five prophage-associated loci by coordinate, and emit per-region FASTA files in data_proc/. Companion Bacillus phage lambda sequences and a consolidated sequences.zip bundle support downstream comparative genomics or annotation work, while results/ is reserved for future analyses generated from these curated segments.",
+    "highlights": [
+      "Scripted Biostrings extraction of five prophage-associated loci from Bacillus cereus.",
+      "Generated per-region FASTA outputs plus bundled archives for downstream workflows.",
+      "Provisioned companion phage references to streamline comparative analyses."
+    ],
+    "keywords": [
+      "Microbiome Profiling",
+      "Workflow Automation"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1581093588401-22e8c8b0a2df?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Genomics workstation visualising bacterial contigs"
+    },
+    "tags": [
+      "R",
+      "Biostrings",
+      "FASTA",
+      "Genomic region extraction",
+      "Bacillus cereus"
+    ]
+  }
+]

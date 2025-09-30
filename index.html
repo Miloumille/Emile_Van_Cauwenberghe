@@ -1,224 +1,298 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Bioinformatique | Emile Van Cauwenberghe</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="page-background" aria-hidden="true"></div>
-    <header class="hero">
-        <div class="hero__content">
-            <div class="hero__avatar" aria-hidden="true"></div>
-            <div class="hero__intro">
-                <p class="hero__eyebrow">Bioinformatique &amp; science des données</p>
-                <h1>Emile Van Cauwenberghe</h1>
-                <p class="hero__tagline">Je conçois des pipelines et des analyses exploratoires pour transformer des données omiques complexes en connaissances actionnables.</p>
-                <div class="hero__meta">
-                    <span>📍 Lille, France</span>
-                    <span>🎓 Étudiant en bioinformatique</span>
-                    <span>🧬 Passionné par les projets collaboratifs</span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="filters" aria-labelledby="filters-title">
-            <div class="filters__header">
-                <h2 id="filters-title">Explorer mes projets</h2>
-                <p>Sélectionnez une catégorie pour révéler les études de cas correspondantes. Chaque carte présente un aperçu rapide : objectif, technologies clés et livrables.</p>
-            </div>
-            <div class="filters__buttons" role="group" aria-label="Catégories de projets">
-                <button class="filter-button is-active" data-filter="all" aria-pressed="true">Tous les projets</button>
-                <button class="filter-button" data-filter="Genomics & Variant Analysis" aria-pressed="false">Genomics &amp; Variant Analysis</button>
-                <button class="filter-button" data-filter="Transcriptomics & Gene Expression" aria-pressed="false">Transcriptomics &amp; Gene Expression</button>
-                <button class="filter-button" data-filter="Structural Bioinformatics & Drug Design" aria-pressed="false">Structural Bioinformatics &amp; Drug Design</button>
-                <button class="filter-button" data-filter="Metagenomics & Microbiome Analysis" aria-pressed="false">Metagenomics &amp; Microbiome Analysis</button>
-                <button class="filter-button" data-filter="Computational Workflows & Scripting" aria-pressed="false">Computational Workflows &amp; Scripting</button>
-            </div>
-        </section>
-
-        <section class="projects" aria-label="Liste des projets">
-            <div class="projects__grid">
-                <article class="project-card" data-category="Genomics & Variant Analysis">
-                    <header>
-                        <h3>Pipeline de détection de variants germinaux</h3>
-                        <span class="project-card__category">Genomics &amp; Variant Analysis</span>
-                    </header>
-                    <p>Conception d'un pipeline reproductible pour l'appel de variants à partir de données WES avec GATK, intégration de QC automatisé et reporting interactif.</p>
-                    <ul class="project-card__tags">
-                        <li>GATK</li>
-                        <li>Snakemake</li>
-                        <li>R Markdown</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Prototype interne</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Genomics & Variant Analysis">
-                    <header>
-                        <h3>Analyse comparative de signatures tumorales</h3>
-                        <span class="project-card__category">Genomics &amp; Variant Analysis</span>
-                    </header>
-                    <p>Benchmark d'algorithmes pour identifier des signatures mutationales dans les cohortes TCGA, avec visualisations interactives des profils de mutation.</p>
-                    <ul class="project-card__tags">
-                        <li>Python</li>
-                        <li>scikit-learn</li>
-                        <li>TCGA</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Étude exploratoire</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Transcriptomics & Gene Expression">
-                    <header>
-                        <h3>Profilage d'expression différentielle RNA-Seq</h3>
-                        <span class="project-card__category">Transcriptomics &amp; Gene Expression</span>
-                    </header>
-                    <p>Pipeline complet de traitement RNA-Seq : quantification, normalisation, analyses DEG et enrichissements fonctionnels avec rapports HTML interactifs.</p>
-                    <ul class="project-card__tags">
-                        <li>DESeq2</li>
-                        <li>Bioconductor</li>
-                        <li>Shiny</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">En cours de validation</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Transcriptomics & Gene Expression">
-                    <header>
-                        <h3>Cartographie spatiale des transcrits</h3>
-                        <span class="project-card__category">Transcriptomics &amp; Gene Expression</span>
-                    </header>
-                    <p>Application interactive pour explorer des données de transcriptomique spatiale et mettre en avant des micro-environnements tumoraux spécifiques.</p>
-                    <ul class="project-card__tags">
-                        <li>Python</li>
-                        <li>Plotly Dash</li>
-                        <li>Seurat</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Concept</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Structural Bioinformatics & Drug Design">
-                    <header>
-                        <h3>Criblage virtuel de ligands pour kinases</h3>
-                        <span class="project-card__category">Structural Bioinformatics &amp; Drug Design</span>
-                    </header>
-                    <p>Pipeline de docking haute capacité pour prioriser des inhibiteurs de kinases, avec scoring combiné et visualisation 3D web.</p>
-                    <ul class="project-card__tags">
-                        <li>AutoDock Vina</li>
-                        <li>PyMOL</li>
-                        <li>Flask</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Résultats préliminaires</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Structural Bioinformatics & Drug Design">
-                    <header>
-                        <h3>Analyse de stabilité de complexes protéine-ligand</h3>
-                        <span class="project-card__category">Structural Bioinformatics &amp; Drug Design</span>
-                    </header>
-                    <p>Simulation de dynamiques moléculaires pour évaluer la stabilité de complexes thérapeutiques, tableaux de bord résumant les interactions clés.</p>
-                    <ul class="project-card__tags">
-                        <li>GROMACS</li>
-                        <li>MDAnalysis</li>
-                        <li>Dashboards</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Collaboration académique</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Metagenomics & Microbiome Analysis">
-                    <header>
-                        <h3>Atlas microbiome de fermes urbaines</h3>
-                        <span class="project-card__category">Metagenomics &amp; Microbiome Analysis</span>
-                    </header>
-                    <p>Étude comparative des communautés microbiennes dans des fermes hydroponiques, workflows de taxonomie et visualisation chronologique.</p>
-                    <ul class="project-card__tags">
-                        <li>QIIME 2</li>
-                        <li>R tidyverse</li>
-                        <li>MetaboAnalyst</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Publication en préparation</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Metagenomics & Microbiome Analysis">
-                    <header>
-                        <h3>Surveillance métagénomique en hôpital</h3>
-                        <span class="project-card__category">Metagenomics &amp; Microbiome Analysis</span>
-                    </header>
-                    <p>Dashboard temps réel pour suivre la résistance antimicrobienne via séquençage shotgun, alertes automatisées pour les équipes cliniques.</p>
-                    <ul class="project-card__tags">
-                        <li>Nextflow</li>
-                        <li>Grafana</li>
-                        <li>ELK Stack</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">POC fonctionnel</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Computational Workflows & Scripting">
-                    <header>
-                        <h3>Starter kit de workflows reproductibles</h3>
-                        <span class="project-card__category">Computational Workflows &amp; Scripting</span>
-                    </header>
-                    <p>Boilerplate Nextflow avec intégration CI/CD GitHub Actions, tests automatisés et gestion de paramètres via fichiers de profils.</p>
-                    <ul class="project-card__tags">
-                        <li>Nextflow</li>
-                        <li>GitHub Actions</li>
-                        <li>Docker</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Disponible sur GitHub</span>
-                    </footer>
-                </article>
-
-                <article class="project-card" data-category="Computational Workflows & Scripting">
-                    <header>
-                        <h3>Bibliothèque utilitaire pour analyses omiques</h3>
-                        <span class="project-card__category">Computational Workflows &amp; Scripting</span>
-                    </header>
-                    <p>Collection de scripts Python et R harmonisés pour la préparation de matrices omiques, QA/QC et intégration avec des LIMS.</p>
-                    <ul class="project-card__tags">
-                        <li>Python</li>
-                        <li>R</li>
-                        <li>Poetry</li>
-                    </ul>
-                    <footer>
-                        <span class="project-card__status">Version beta</span>
-                    </footer>
-                </article>
-            </div>
-        </section>
-
-        <section class="contact" aria-labelledby="contact-title">
-            <h2 id="contact-title">Travaillons ensemble</h2>
-            <p>Intéressé par une collaboration, un stage ou simplement une discussion autour de la bioinformatique ? Contactez-moi :</p>
-            <ul class="contact__list">
-                <li>Email : <a href="mailto:emile.vancau@example.com">emile.vancau@example.com</a></li>
-                <li>LinkedIn : <a href="https://linkedin.com/in/emilevancau" target="_blank" rel="noreferrer">linkedin.com/in/emilevancau</a></li>
-                <li>GitHub : <a href="https://github.com/emilevancau" target="_blank" rel="noreferrer">github.com/emilevancau</a></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <p>&copy; <span id="current-year"></span> Emile Van Cauwenberghe. Tous droits réservés.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Bioinformatics Portfolio | Emile Van Cauwenberghe
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <div aria-hidden="true" class="page-background">
+  </div>
+  <header class="hero">
+   <div class="hero__content">
+    <div aria-hidden="true" class="hero__avatar">
+    </div>
+    <div class="hero__intro">
+     <p class="hero__eyebrow">
+      Bioinformatics &amp; Data Science
+     </p>
+     <h1>
+      Emile Van Cauwenberghe
+     </h1>
+     <p class="hero__tagline">
+      I build reproducible pipelines and exploratory analyses that transform complex omics datasets into actionable insights.
+     </p>
+     <div class="hero__meta">
+      <span>
+       📍 Lille, France
+      </span>
+      <span>
+       🎓 Bioinformatics student
+      </span>
+      <span>
+       🧬 Collaborative project enthusiast
+      </span>
+     </div>
+    </div>
+   </div>
+  </header>
+  <main>
+   <section aria-labelledby="filters-title" class="filters">
+    <div class="filters__header">
+     <h2 id="filters-title">
+      Explore My Projects
+     </h2>
+     <p>
+      Select a category or combine keywords to surface the case studies that best match your objectives. Each card highlights the problem, core technologies, and delivered outcomes.
+     </p>
+    </div>
+    <div class="filters__groups">
+     <div aria-label="Project categories" class="filters__group" role="group">
+      <p class="filters__group-label">
+       Categories
+      </p>
+      <div class="filters__buttons filters__buttons--categories">
+       <button aria-pressed="false" class="filter-button" data-filter="Genomics &amp; Variant Analysis" type="button">
+        <span class="filter-button__label">
+         Genomics &amp; Variant Analysis
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button" data-filter="Transcriptomics &amp; Gene Expression" type="button">
+        <span class="filter-button__label">
+         Transcriptomics &amp; Gene Expression
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button" data-filter="Structural Bioinformatics &amp; Drug Design" type="button">
+        <span class="filter-button__label">
+         Structural Bioinformatics &amp; Drug Design
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button" data-filter="Metagenomics &amp; Microbiome Analysis" type="button">
+        <span class="filter-button__label">
+         Metagenomics &amp; Microbiome Analysis
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button" data-filter="Computational Workflows &amp; Scripting" type="button">
+        <span class="filter-button__label">
+         Computational Workflows &amp; Scripting
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+      </div>
+     </div>
+     <div aria-label="Project keywords" class="filters__group filters__group--keywords" role="group">
+      <p class="filters__group-label">
+       Keywords
+      </p>
+      <div class="filters__buttons filters__buttons--keywords">
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="variant-calling" type="button">
+        <span class="filter-button__label">
+         Variant Calling
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="quality-control" type="button">
+        <span class="filter-button__label">
+         Quality Control
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="reproducible-pipelines" type="button">
+        <span class="filter-button__label">
+         Reproducible Pipelines
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="machine-learning" type="button">
+        <span class="filter-button__label">
+         Machine Learning
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="interactive-dashboards" type="button">
+        <span class="filter-button__label">
+         Interactive Dashboards
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="spatial-transcriptomics" type="button">
+        <span class="filter-button__label">
+         Spatial Transcriptomics
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="workflow-automation" type="button">
+        <span class="filter-button__label">
+         Workflow Automation
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="structural-modeling" type="button">
+        <span class="filter-button__label">
+         Structural Modeling
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="molecular-dynamics" type="button">
+        <span class="filter-button__label">
+         Molecular Dynamics
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="microbiome-profiling" type="button">
+        <span class="filter-button__label">
+         Microbiome Profiling
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="clinical-reporting" type="button">
+        <span class="filter-button__label">
+         Clinical Reporting
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="devops-tooling" type="button">
+        <span class="filter-button__label">
+         DevOps &amp; Tooling
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="cohort-analytics" type="button">
+        <span class="filter-button__label">
+         Cohort Analytics
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+       <button aria-pressed="false" class="filter-button filter-button--keyword" data-keyword="data-visualization" type="button">
+        <span class="filter-button__label">
+         Data Visualization
+        </span>
+        <span aria-hidden="true" class="filter-button__count">
+        </span>
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="filters__actions">
+     <button aria-label="Reset all filters" class="filters__reset" disabled="" type="button">
+      Reset filters
+     </button>
+    </div>
+   </section>
+   <section aria-label="Project list" class="projects">
+    <div class="projects__grid">
+     <p class="projects__placeholder">
+      Loading curated case studies...
+     </p>
+    </div>
+   </section>
+   <div class="project-modal" hidden="">
+    <div class="project-modal__backdrop" data-modal-close="true">
+    </div>
+    <div aria-labelledby="project-modal-title" aria-modal="true" class="project-modal__dialog" role="dialog">
+     <button aria-label="Close project details" class="project-modal__close" data-modal-close="true" type="button">
+      <span aria-hidden="true">
+       ×
+      </span>
+     </button>
+     <div class="project-modal__header">
+      <p class="project-modal__category">
+      </p>
+      <h3 class="project-modal__title" id="project-modal-title">
+      </h3>
+      <div class="project-modal__meta">
+       <span class="project-modal__status">
+       </span>
+       <span class="project-modal__date">
+       </span>
+      </div>
+     </div>
+     <div class="project-modal__body">
+      <figure class="project-modal__media" hidden="">
+       <img alt="" loading="lazy" src=""/>
+      </figure>
+      <p class="project-modal__description">
+      </p>
+      <div class="project-modal__highlights" hidden="">
+       <p class="project-modal__section-title">
+        Key Highlights
+       </p>
+       <ul>
+       </ul>
+      </div>
+      <div class="project-modal__tags" hidden="">
+       <p class="project-modal__section-title">
+        Technologies
+       </p>
+       <ul>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </div>
+   <section aria-labelledby="contact-title" class="contact">
+    <h2 id="contact-title">
+     Let's Collaborate
+    </h2>
+    <p>
+     Interested in a collaboration, an internship opportunity, or simply exchanging ideas on bioinformatics? Reach out:
+    </p>
+    <ul class="contact__list">
+     <li>
+      Email:
+      <a href="mailto:emile.vancau@example.com">
+       emile.vancau@example.com
+      </a>
+     </li>
+     <li>
+      LinkedIn:
+      <a href="https://linkedin.com/in/emilevancau" rel="noreferrer" target="_blank">
+       linkedin.com/in/emilevancau
+      </a>
+     </li>
+     <li>
+      GitHub:
+      <a href="https://github.com/emilevancau" rel="noreferrer" target="_blank">
+       github.com/emilevancau
+      </a>
+     </li>
+    </ul>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <p>
+    ©
+    <span id="current-year">
+    </span>
+    Emile Van Cauwenberghe. All rights reserved.
+   </p>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
 </html>
